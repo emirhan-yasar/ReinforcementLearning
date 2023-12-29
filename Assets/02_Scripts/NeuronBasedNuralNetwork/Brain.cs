@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using NuralNetwork.Character;
+using NeuronBasedNuralNetwork.Character;
 using TMPro;
 using UnityEngine;
 
-namespace NuralNetwork
+namespace NeuronBasedNuralNetwork
 {
     public class Brain : MonoBehaviour
     {

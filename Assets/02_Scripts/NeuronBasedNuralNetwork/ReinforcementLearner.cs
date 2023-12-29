@@ -1,8 +1,7 @@
-﻿using System;
-using NuralNetwork.Character;
+﻿using NeuronBasedNuralNetwork.Character;
 using UnityEngine;
 
-namespace NuralNetwork
+namespace NeuronBasedNuralNetwork
 {
     public class ReinforcementLearner
     {

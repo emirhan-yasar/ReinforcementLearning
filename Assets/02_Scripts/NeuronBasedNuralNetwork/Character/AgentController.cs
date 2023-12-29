@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace NuralNetwork.Character
+namespace NeuronBasedNuralNetwork.Character
 {
     public class AgentController : MonoBehaviour
     {

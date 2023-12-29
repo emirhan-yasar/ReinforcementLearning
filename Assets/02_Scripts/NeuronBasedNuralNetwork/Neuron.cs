@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using UnityEngine;
 
-namespace NuralNetwork
+namespace NeuronBasedNuralNetwork
 {
     public class Neuron
     {
