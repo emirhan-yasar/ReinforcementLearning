@@ -675,13 +675,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304236000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281cdefffe1e4c048e74e59b994c0df9, type: 3}
+  m_Script: {fileID: 11500000, guid: f967ca4903bf4774a9e07546cb872da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  targetTransform: {fileID: 761108204}
   brain: {fileID: 1850133547}
-  playerInfoText: {fileID: 1666632501}
+  targetTransform: {fileID: 0}
 --- !u!1 &1380255423
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,37 +989,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1727263197
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1727263199}
-  m_Layer: 0
-  m_Name: ReinforcementLearn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1727263199
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727263197}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747724105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1117,7 @@ Transform:
   m_GameObject: {fileID: 1850133545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 3.26, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.41, y: 0.41, z: 0.41}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1164,14 +1132,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850133545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d79621f8a6a47778296fd4ec5f5fe36, type: 3}
+  m_Script: {fileID: 11500000, guid: de5d74c308c94e409df1b1a39b3d92ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerSizes: 04000000800000008000000002000000
-  maxStep: 1000
-  learningRate: 0.01
-  totalRewardText: {fileID: 2140362523}
-  rewardText: {fileID: 734342266}
+  inputLayerSize: 4
+  outputLayerSize: 2
+  hiddenLayerSizes: 2000000020000000
+  agentController: {fileID: 1304236003}
+  behaviorType: 1
 --- !u!1 &1988895181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1377,5 @@ SceneRoots:
   - {fileID: 2031656124}
   - {fileID: 1304236002}
   - {fileID: 761108204}
-  - {fileID: 1727263199}
   - {fileID: 1747724109}
   - {fileID: 9481936}
